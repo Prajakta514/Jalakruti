@@ -1,0 +1,109 @@
+
+.auth-container {
+  /* max-width: 400px; */
+  min-width: 430px;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  border-radius: 10px;
+  /* background-color: #333;  */
+  color: #fff; /* White text */
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+}
+
+.AA {
+  background-image: url('bg.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Set height to cover the entire viewport */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin: 0;
+  padding: 0;
+}
+
+/* Rest of your CSS remains unchanged */
+
+
+.auth-title {
+  font-size: 18px;
+  /* font-weight: bold; */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.google-button,
+.email-button,
+.toggle-button {
+  background-color: #007bff; /* Blue button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.google-button:hover,
+.email-button:hover,
+.toggle-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.fa-google {
+  margin-right: 5px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-input {
+  margin-bottom: 20px;
+}
+
+.auth-input input {
+  width: 90%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color:  #fff; /* Dark gray input background */
+  font-size: 16px;
+}
+
+.auth-input input:focus {
+  outline: none;
+  background-color: #d9d3d3; /* Slightly lighter on focus */
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer-text {
+  margin-top: 20px;
+  color: #ccc;
+  font-size: 14px;
+  text-align: center;
+}

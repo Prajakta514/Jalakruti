@@ -1,0 +1,106 @@
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.usage-chart,
+.usage-section {
+  width: 48%; 
+}
+
+.usage-chart h2,
+.usage-section h2 {
+  margin-bottom: 10px;
+}
+
+.progress-bars {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-bar {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.progress-bar p {
+  margin-left: 10px;
+} */
+
+.progress-bars {
+  display: flex;
+  justify-content: space-around; 
+  margin-bottom: 20px;
+  
+}
+
+.progress-bar {
+  text-align: center;
+  width: 120px; /* Adjusted width for each progress bar */
+}
+
+
+.progress-bar p {
+  margin-left: 10px;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.usage-chart,
+.usage-section {
+  width: 48%; 
+}
+
+.usage-chart h2,
+.usage-section h2 {
+  margin-bottom: 10px;
+}
+
+.add-request-button {
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px; 
+}
+/* Home.css */
+
+/* Increase width and height of all charts */
+.usage-chart canvas,
+.usage-section canvas,
+.weekly-usage-chart canvas {
+  margin-left: 20px;
+  min-width: 500px;
+  width: 100% !important; /* Adjust width as needed */
+  height: 400px !important; /* Adjust height as needed */
+}
+
+/* Increase width and height of radial circles */
+.react-circular-progressbar .CircularProgressbar .CircularProgressbar-path {
+  stroke-width: 15px; /* Adjust stroke width as needed */
+}
+
+/* Increase width of progress bars */
+.progress-bar {
+  /* text-align: center; */
+  width: 150px; /* Adjust width as needed */
+}

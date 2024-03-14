@@ -1,0 +1,32 @@
+.notifications-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Spacing between notification cards */
+}
+
+.notification-card {
+  margin-left: 120px;
+    align-items: center;
+    width: 80%;
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5; /* Background color for notification card */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adding shadow for card effect */
+}
+
+.alert-icon {
+  font-size: 29px;
+  margin-right: 10px;
+}
+
+.notification-content {
+    margin: 10px;
+  flex-grow: 1;
+}
+
+.notification-content p {
+  margin: 0;
+  font-size: 16px;
+}

@@ -1,0 +1,41 @@
+.navbar {
+  height: 130px; /* Increased height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+ background-image: URL(j3.jpeg);
+  background-color: #ffffff; /* Change to your desired background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow if needed */
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px; /* Reduce margin between tabs */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333333; /* Change to your desired text color */
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background-color: #4791ff; /* Change to your desired logout button color */
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logout-button:hover {
+  background-color: #2f21e8; /* Change to your desired hover color */
+}
+
+.logo {
+  width: 100px; /* Adjust the size of the logo */
+  height: auto;
+}

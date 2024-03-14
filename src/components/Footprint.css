@@ -1,0 +1,203 @@
+/* Footprint.css */
+
+@keyframes water {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/* 
+@keyframes wave {
+  0% {
+    transform: scaleY(0.5);
+  }
+  50% {
+    transform: scaleY(1.5);
+  }
+  100% {
+    transform: scaleY(0.5);
+  }
+} */
+
+@keyframes wave {
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+  25% {
+    transform: translateY(-10px) scaleY(1.5);
+  }
+  50% {
+    transform: translateY(0) scaleY(1);
+  }
+  75% {
+    transform: translateY(10px) scaleY(0.8);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+
+.background-container {
+  overflow: hidden; /* Hide overflow to hide excess waves */
+  animation: water 20s linear infinite alternate-reverse;
+  
+}
+
+
+.footprint-container {
+  position: relative; /* Position relative for the pseudo-element */
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  z-index: 1;
+  /* overflow: hidden; 
+  animation: water 20s linear infinite alternate-reverse; */
+}
+
+/* Create the wave animation */
+.background-container::after {
+  content: "";
+position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; 
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #007bff 100%);
+  animation: wave 4s infinite linear alternate;
+}
+
+
+.title {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form-section {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.added-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.member {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.input-group input,
+.select-input,
+.input-field {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-add-member,
+.btn-add-appliance,
+.save-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-btn {
+  display: block;
+  margin: auto;
+}
+
+.member button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.member button:hover {
+  text-decoration: underline;
+}
+
+.allocation-container {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  width: 900px;
+  margin-left: 300px;
+}
+
+.allocation-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.water-amount {
+  margin-top: 15px;
+}
+
+.water-amount p {
+  margin-bottom: 10px;
+}
+
+.water-amount ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.water-amount li {
+  margin-bottom: 5px;
+}
+
+.allocation-container {
+  display: flex; /* Use flexbox */
+}
+
+.left-half {
+  flex: 1; /* Take up half of the container */
+}
+
+.right-half {
+  flex: 1; /* Take up the other half of the container */
+  padding-left: 20px; /* Add some spacing between the image and the text */
+}
+
+.water-icon {
+  width: 400px; /* Make the image fill the container */
+  height: 300px;
+}
+
+/* Additional styling for header and water-amount */
+.header {
+  display: flex;
+  align-items: center; /* Center title vertically */
+}
+
+.water-amount {
+  padding-top: 20px; /* Add some spacing between the title and the water amount */
+}
